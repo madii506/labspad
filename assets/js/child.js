@@ -10,7 +10,7 @@
   const S = { awake: 'talking', rot: 'quiet', dead: 'silent', ascended: 'graduated' };
   if (!mint) { app.innerHTML = `<section class="prof"><div class="wrap"><div class="none"><b>Nobody here</b><a class="btn sm" href="/">Back to LabsPad</a></div></div></section>`; return; }
   function shell(k) {
-    document.title = k.name + ' · LabsPad'; const live = k.status === 'live';
+    document.title = k.name + ' · LABSPAD'; const live = k.status === 'live';
     app.innerHTML = `
     <section class="prof"><div class="wrap pgrid">
       <div class="ring reveal"><span class="orb ${V.orbOf(k.mint)}" id="ring"></span><img src="/i/${k.mint}" alt="${esc(k.name)}"></div>
